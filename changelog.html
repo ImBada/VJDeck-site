@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VJDeck — Changelog</title>
+  <link rel="icon" type="image/png" href="images/icon.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    :root { --bg:#050505; --surface:#111; --border:#1e1e1e; --text:#ddd; --text-dim:#666; --accent:#00c8f0; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Inter',-apple-system,sans-serif; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { max-width:640px; margin:0 auto; padding:0 28px; }
+    nav { position:fixed; top:0; width:100%; z-index:100; background:rgba(5,5,5,.8); backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px); border-bottom:1px solid var(--border); }
+    .nav-inner { max-width:640px; margin:0 auto; padding:0 28px; height:52px; display:flex; align-items:center; justify-content:space-between; }
+    .nav-logo { display:flex; align-items:center; gap:8px; font-weight:700; font-size:15px; letter-spacing:-.01em; }
+    .nav-logo img { width:24px; height:24px; border-radius:5px; }
+    .lang-sw { display:flex; gap:2px; background:var(--surface); border:1px solid var(--border); border-radius:6px; padding:2px; }
+    .lang-sw button { background:none; border:none; color:var(--text-dim); font-size:11px; font-weight:600; padding:3px 8px; border-radius:4px; cursor:pointer; transition:all .15s; font-family:inherit; }
+    .lang-sw button.active { background:rgba(255,255,255,.08); color:var(--text); }
+    .page-header { padding:120px 0 48px; }
+    .page-header h1 { font-size:32px; font-weight:800; letter-spacing:-.03em; margin-bottom:8px; }
+    .page-header p { font-size:14px; color:var(--text-dim); }
+    .version { border-top:1px solid var(--border); padding:32px 0; }
+    .version h2 { font-size:18px; font-weight:700; letter-spacing:-.01em; margin-bottom:4px; }
+    .version .date { font-size:12px; color:var(--text-dim); margin-bottom:16px; }
+    .version ul { list-style:none; display:flex; flex-direction:column; gap:8px; }
+    .version li { font-size:14px; color:var(--text-dim); line-height:1.6; padding-left:16px; position:relative; }
+    .version li::before { content:''; position:absolute; left:0; top:9px; width:4px; height:4px; border-radius:50%; background:var(--accent); }
+    footer { margin-top:60px; border-top:1px solid var(--border); padding:32px 0; text-align:center; font-size:12px; color:var(--text-dim); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="images/icon.png" alt="">VJDeck</a>
+    <div class="lang-sw">
+      <button onclick="setLang('ko')" id="btn-ko">KO</button>
+      <button onclick="setLang('ja')" id="btn-ja">JA</button>
+      <button onclick="setLang('en')" id="btn-en">EN</button>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="page-header">
+    <h1>Changelog</h1>
+    <p data-i18n="cl_sub"></p>
+  </div>
+
+  <div class="version">
+    <h2>1.0</h2>
+    <div class="date">2026-04-12</div>
+    <ul>
+      <li data-i18n="c1"></li>
+      <li data-i18n="c2"></li>
+      <li data-i18n="c3"></li>
+      <li data-i18n="c4"></li>
+      <li data-i18n="c5"></li>
+      <li data-i18n="c6"></li>
+      <li data-i18n="c7"></li>
+      <li data-i18n="c8"></li>
+      <li data-i18n="c9"></li>
+    </ul>
+  </div>
+</div>
+
+<footer><div class="wrap">VJDeck &mdash; macOS 14+</div></footer>
+
+<script>
+const T = {
+  ko: {
+    cl_sub: '업데이트 내역',
+    c1: '최대 4개의 독립 비디오 덱 + 덱별 Syphon 서버',
+    c2: 'Master Output — A/B 크로스페이더 믹싱, 블렌드 모드 (Crossfade, Addition, Wipe), 전체화면 출력',
+    c3: '마이크 입력 기반 오디오 싱크 — FFT 교차 상관, 자동 재탐색',
+    c4: '주파수 대역별 웨이브폼, 큐 마커, 실시간 시크, DJ 스크래치',
+    c5: 'MIDI 하드웨어 컨트롤러 매핑 — 덱별 + Master 지원, Note + CC',
+    c6: 'FFmpeg + VideoToolbox 하드웨어 가속 — 모든 포맷 단일 경로 재생',
+    c7: '양방향 프레임 캐시 — 역재생/스크래치 즉시 표시',
+    c8: '피크 노멀라이즈, 마스터 템포, 오디오 출력 장치 선택',
+    c9: '플레이리스트, M3U 가져오기/내보내기',
+  },
+  ja: {
+    cl_sub: 'アップデート履歴',
+    c1: '最大4つの独立ビデオデッキ + デッキ別Syphonサーバー',
+    c2: 'Master Output — A/Bクロスフェーダーミキシング、ブレンドモード（Crossfade、Addition、Wipe）、フルスクリーン出力',
+    c3: 'マイク入力ベースのオーディオ同期 — FFT相互相関、自動再検索',
+    c4: '周波数帯域別ウェーブフォーム、キューマーカー、リアルタイムシーク、DJスクラッチ',
+    c5: 'MIDIハードウェアコントローラーマッピング — デッキ別 + Master対応、Note + CC',
+    c6: 'FFmpeg + VideoToolboxハードウェアアクセラレーション — 全フォーマット単一パス再生',
+    c7: '双方向フレームキャッシュ — 逆再生/スクラッチ即時表示',
+    c8: 'ピークノーマライズ、マスターテンポ、オーディオ出力デバイス選択',
+    c9: 'プレイリスト、M3Uインポート/エクスポート',
+  },
+  en: {
+    cl_sub: 'Release history',
+    c1: 'Up to 4 independent video decks + per-deck Syphon servers',
+    c2: 'Master Output — A/B crossfader mixing, blend modes (Crossfade, Addition, Wipe), fullscreen output',
+    c3: 'Microphone-based audio sync — FFT cross-correlation, automatic re-sync',
+    c4: 'Frequency-banded waveform, cue markers, real-time seek, DJ scratch',
+    c5: 'MIDI hardware controller mapping — per-deck + Master, Note + CC',
+    c6: 'FFmpeg + VideoToolbox hardware acceleration — all formats, single playback path',
+    c7: 'Bidirectional frame cache — instant display for reverse playback and scratch',
+    c8: 'Peak normalize, master tempo, audio output device selection',
+    c9: 'Playlist, M3U import/export',
+  }
+};
+
+function setLang(lang) {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (T[lang] && T[lang][key]) el.innerHTML = T[lang][key];
+  });
+  document.querySelectorAll('.lang-sw button').forEach(b => b.classList.remove('active'));
+  document.getElementById('btn-' + lang).classList.add('active');
+  document.documentElement.lang = lang;
+  localStorage.setItem('vjdeck-lang', lang);
+}
+
+const saved = localStorage.getItem('vjdeck-lang');
+const browserLang = navigator.language.slice(0, 2);
+const initLang = saved || (['ja','en'].includes(browserLang) ? browserLang : 'ko');
+setLang(initLang);
+</script>
+
+</body>
+</html>
