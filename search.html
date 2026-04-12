@@ -66,7 +66,11 @@
   <div class="page-header">
     <h1>Search Everything for Mac</h1>
     <p data-i18n="s_desc"></p>
-    <a href="https://github.com/ImBada/SearchEverythingForMac/releases/latest" target="_blank" class="dl-btn" data-i18n="s_dl"></a>
+    <a href="https://github.com/ImBada/SearchEverythingForMac/releases/latest/download/SearchEverythingLatest.dmg" class="dl-btn">Download for macOS</a>
+    <div style="margin-top:12px">
+      <img src="https://img.shields.io/github/downloads/ImBada/SearchEverythingForMac/total?style=flat&color=222&label=downloads&labelColor=111" alt="downloads">
+      <img src="https://img.shields.io/github/v/release/ImBada/SearchEverythingForMac?style=flat&color=222&label=latest&labelColor=111" alt="version">
+    </div>
   </div>
 
   <div class="section">
@@ -98,6 +102,9 @@
   <div class="section">
     <h2 data-i18n="s_vjdeck_h"></h2>
     <p class="note" data-i18n="s_vjdeck_p"></p>
+    <div style="margin-top:24px; border-radius:10px; overflow:hidden; border:1px solid var(--border);">
+      <img src="images/search.png" alt="SearchEverything + VJDeck" style="width:100%; display:block;">
+    </div>
   </div>
 </div>
 
@@ -107,7 +114,6 @@
 const T = {
   ko: {
     s_desc: 'macOS용 초고속 파일 검색기. 타이핑하는 즉시 결과가 나옵니다. 라이브 VJ 현장에서 영상을 빠르게 찾기 위해 만들었습니다.',
-    s_dl: 'GitHub에서 다운로드',
     s_about_h: '소개',
     s_about_p: '라이브 VJ 현장에서 애니메이션 뮤직비디오를 빠르게 찾기 위해 만든 파일 검색 유틸리티입니다. 메모리 기반 인덱싱으로 수만 개의 파일도 실시간 검색합니다. Spotlight나 Finder 검색이 너무 느리거나 부정확하다고 느꼈다면, 이 앱이 답입니다.',
     s_feat_h: '기능',
@@ -120,11 +126,10 @@ const T = {
     s_req_h: '시스템 요구 사항',
     s_req_rec: '권장: macOS 14.6+',
     s_vjdeck_h: 'VJDeck과 함께 사용하기',
-    s_vjdeck_p: '영상 파일을 Search Everything으로 빠르게 찾아서 <a href="index.html">VJDeck</a>의 플레이리스트에 드래그하면, 라이브 현장에서 곡에 맞는 영상을 바로 찾아 재생할 수 있습니다.',
+    s_vjdeck_p: 'VJDeck과 함께 사용한다면, 검색 결과에 덱 전송 버튼을 표시할 수 있습니다. 원하는 영상을 찾아서 버튼 하나로 VJDeck의 원하는 덱에 바로 보낼 수 있습니다.',
   },
   ja: {
     s_desc: 'macOS用の超高速ファイル検索。タイピングした瞬間に結果が表示されます。ライブVJ現場で映像を素早く見つけるために作りました。',
-    s_dl: 'GitHubからダウンロード',
     s_about_h: '概要',
     s_about_p: 'ライブVJ現場でアニメミュージックビデオを素早く見つけるために作ったファイル検索ユーティリティです。メモリベースのインデックスで数万ファイルもリアルタイム検索。SpotlightやFinderの検索が遅い・不正確だと感じたなら、このアプリが答えです。',
     s_feat_h: '機能',
@@ -137,11 +142,10 @@ const T = {
     s_req_h: 'システム要件',
     s_req_rec: '推奨: macOS 14.6+',
     s_vjdeck_h: 'VJDeckと一緒に使う',
-    s_vjdeck_p: '映像ファイルをSearch Everythingで素早く見つけて、<a href="index.html">VJDeck</a>のプレイリストにドラッグすれば、ライブ現場で曲に合う映像をすぐに見つけて再生できます。',
+    s_vjdeck_p: 'VJDeckと一緒に使うなら、検索結果にデッキ送信ボタンを表示できます。目的の映像を見つけて、ボタン1つでVJDeckの好きなデッキに直接送れます。',
   },
   en: {
     s_desc: 'Blazing-fast file search for macOS. Results appear as you type. Built for finding videos quickly during live VJ sets.',
-    s_dl: 'Download on GitHub',
     s_about_h: 'About',
     s_about_p: 'A file search utility originally built to find anime music videos quickly during live VJ performances. Memory-based indexing lets you search tens of thousands of files in real time. If Spotlight or Finder search feels too slow or inaccurate, this is the answer.',
     s_feat_h: 'Features',
@@ -154,7 +158,7 @@ const T = {
     s_req_h: 'System requirements',
     s_req_rec: 'Recommended: macOS 14.6+',
     s_vjdeck_h: 'Use with VJDeck',
-    s_vjdeck_p: 'Find video files instantly with Search Everything, drag them into <a href="index.html">VJDeck</a>\'s playlist, and you\'re ready to play the right video for the right track on stage.',
+    s_vjdeck_p: 'When used with VJDeck, you can show deck send buttons in search results. Find the video you want and send it to any VJDeck deck with a single click.',
   }
 };
 
