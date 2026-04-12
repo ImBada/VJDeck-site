@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Everything for Mac</title>
+  <meta name="description" content="Instant file search for macOS — built for live VJ workflows">
+  <link rel="icon" type="image/png" href="images/icon.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    :root { --bg:#050505; --surface:#111; --border:#1e1e1e; --text:#ddd; --text-dim:#666; --accent:#00c8f0; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Inter',-apple-system,sans-serif; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { max-width:640px; margin:0 auto; padding:0 28px; }
+
+    nav { position:fixed; top:0; width:100%; z-index:100; background:rgba(5,5,5,.8); backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px); border-bottom:1px solid var(--border); }
+    .nav-inner { max-width:640px; margin:0 auto; padding:0 28px; height:52px; display:flex; align-items:center; justify-content:space-between; }
+    .nav-logo { display:flex; align-items:center; gap:8px; font-weight:700; font-size:15px; letter-spacing:-.01em; }
+    .nav-logo img { width:24px; height:24px; border-radius:5px; }
+    .lang-sw { display:flex; gap:2px; background:var(--surface); border:1px solid var(--border); border-radius:6px; padding:2px; }
+    .lang-sw button { background:none; border:none; color:var(--text-dim); font-size:11px; font-weight:600; padding:3px 8px; border-radius:4px; cursor:pointer; transition:all .15s; font-family:inherit; }
+    .lang-sw button.active { background:rgba(255,255,255,.08); color:var(--text); }
+
+    .page-header { padding:120px 0 48px; }
+    .page-header h1 { font-size:32px; font-weight:800; letter-spacing:-.03em; margin-bottom:8px; }
+    .page-header p { font-size:14px; color:var(--text-dim); line-height:1.7; max-width:480px; }
+
+    .dl-btn {
+      display:inline-block; margin-top:24px;
+      padding:10px 28px; background:var(--accent); color:#000;
+      font-size:13px; font-weight:700; border-radius:8px;
+      transition:filter .15s, transform .15s;
+    }
+    .dl-btn:hover { filter:brightness(1.15); transform:translateY(-1px); }
+
+    .section { border-top:1px solid var(--border); padding:32px 0; }
+    .section h2 { font-size:13px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); margin-bottom:16px; }
+    .feat-list { display:flex; flex-direction:column; gap:20px; }
+    .feat-item h4 { font-size:14px; font-weight:600; margin-bottom:4px; }
+    .feat-item p { font-size:13px; color:var(--text-dim); line-height:1.65; }
+
+    .note { font-size:13px; color:var(--text-dim); line-height:1.65; }
+    .note a { color:var(--accent); }
+
+    .stack-row { display:flex; flex-wrap:wrap; gap:8px; margin-top:16px; }
+    .stack-chip { font-size:12px; padding:6px 12px; border-radius:6px; background:var(--surface); border:1px solid var(--border); color:var(--text-dim); }
+
+    footer { margin-top:60px; border-top:1px solid var(--border); padding:32px 0; text-align:center; font-size:12px; color:var(--text-dim); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="images/icon.png" alt="">VJDeck</a>
+    <div class="lang-sw">
+      <button onclick="setLang('ko')" id="btn-ko">KO</button>
+      <button onclick="setLang('ja')" id="btn-ja">JA</button>
+      <button onclick="setLang('en')" id="btn-en">EN</button>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="page-header">
+    <h1>Search Everything for Mac</h1>
+    <p data-i18n="s_desc"></p>
+    <a href="https://github.com/ImBada/SearchEverythingForMac/releases/latest" target="_blank" class="dl-btn" data-i18n="s_dl"></a>
+  </div>
+
+  <div class="section">
+    <h2 data-i18n="s_about_h"></h2>
+    <p class="note" data-i18n="s_about_p"></p>
+  </div>
+
+  <div class="section">
+    <h2 data-i18n="s_feat_h"></h2>
+    <div class="feat-list">
+      <div class="feat-item"><h4 data-i18n="sf1_h"></h4><p data-i18n="sf1_p"></p></div>
+      <div class="feat-item"><h4 data-i18n="sf2_h"></h4><p data-i18n="sf2_p"></p></div>
+      <div class="feat-item"><h4 data-i18n="sf3_h"></h4><p data-i18n="sf3_p"></p></div>
+      <div class="feat-item"><h4 data-i18n="sf4_h"></h4><p data-i18n="sf4_p"></p></div>
+      <div class="feat-item"><h4 data-i18n="sf5_h"></h4><p data-i18n="sf5_p"></p></div>
+      <div class="feat-item"><h4 data-i18n="sf6_h"></h4><p data-i18n="sf6_p"></p></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 data-i18n="s_req_h"></h2>
+    <div class="stack-row">
+      <span class="stack-chip">macOS 14.0+</span>
+      <span class="stack-chip" data-i18n="s_req_rec"></span>
+      <span class="stack-chip">v3.1</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 data-i18n="s_vjdeck_h"></h2>
+    <p class="note" data-i18n="s_vjdeck_p"></p>
+  </div>
+</div>
+
+<footer><div class="wrap">Search Everything for Mac &mdash; Made by <a href="https://github.com/ImBada" target="_blank" style="color:var(--text-dim)">bada</a> &middot; <a href="https://github.com/ImBada/SearchEverythingForMac" target="_blank" style="color:var(--text-dim)">GitHub</a></div></footer>
+
+<script>
+const T = {
+  ko: {
+    s_desc: 'macOS용 초고속 파일 검색기. 타이핑하는 즉시 결과가 나옵니다. 라이브 VJ 현장에서 영상을 빠르게 찾기 위해 만들었습니다.',
+    s_dl: 'GitHub에서 다운로드',
+    s_about_h: '소개',
+    s_about_p: '라이브 VJ 현장에서 애니메이션 뮤직비디오를 빠르게 찾기 위해 만든 파일 검색 유틸리티입니다. 메모리 기반 인덱싱으로 수만 개의 파일도 실시간 검색합니다. Spotlight나 Finder 검색이 너무 느리거나 부정확하다고 느꼈다면, 이 앱이 답입니다.',
+    s_feat_h: '기능',
+    sf1_h: '실시간 검색', sf1_p: '타이핑하는 즉시 결과가 나옵니다. 메모리 기반 인덱싱으로 수만 개의 파일에서도 지연 없이.',
+    sf2_h: 'Quick Look', sf2_p: '스페이스바로 미리보기. 화살표 키나 마우스로 파일 전환.',
+    sf3_h: '일괄 이름 변경', sf3_p: '검색 결과에서 바로 여러 파일의 이름을 한 번에 변경.',
+    sf4_h: 'Finder 연동', sf4_p: '파일 삭제, 드래그로 복사/이동. Finder처럼 자연스럽게.',
+    sf5_h: '따옴표 키워드 잠금', sf5_p: '반복되는 단어를 따옴표로 감싸면 정확한 구문으로 검색.',
+    sf6_h: '네이밍 패턴 시각화', sf6_p: '특정 명명 규칙을 따르는 파일들의 패턴을 시각적으로 표시.',
+    s_req_h: '시스템 요구 사항',
+    s_req_rec: '권장: macOS 14.6+',
+    s_vjdeck_h: 'VJDeck과 함께 사용하기',
+    s_vjdeck_p: '영상 파일을 Search Everything으로 빠르게 찾아서 <a href="index.html">VJDeck</a>의 플레이리스트에 드래그하면, 라이브 현장에서 곡에 맞는 영상을 바로 찾아 재생할 수 있습니다.',
+  },
+  ja: {
+    s_desc: 'macOS用の超高速ファイル検索。タイピングした瞬間に結果が表示されます。ライブVJ現場で映像を素早く見つけるために作りました。',
+    s_dl: 'GitHubからダウンロード',
+    s_about_h: '概要',
+    s_about_p: 'ライブVJ現場でアニメミュージックビデオを素早く見つけるために作ったファイル検索ユーティリティです。メモリベースのインデックスで数万ファイルもリアルタイム検索。SpotlightやFinderの検索が遅い・不正確だと感じたなら、このアプリが答えです。',
+    s_feat_h: '機能',
+    sf1_h: 'リアルタイム検索', sf1_p: 'タイピングした瞬間に結果表示。メモリベースインデックスで数万ファイルでも遅延なし。',
+    sf2_h: 'Quick Look', sf2_p: 'スペースバーでプレビュー。矢印キーやマウスでファイル切り替え。',
+    sf3_h: '一括リネーム', sf3_p: '検索結果からそのまま複数ファイルの名前を一括変更。',
+    sf4_h: 'Finder連携', sf4_p: 'ファイル削除、ドラッグでコピー/移動。Finderのように自然に。',
+    sf5_h: '引用符キーワードロック', sf5_p: '繰り返し出る単語を引用符で囲むと、正確なフレーズで検索。',
+    sf6_h: 'ネーミングパターン表示', sf6_p: '特定の命名規則に従うファイルのパターンを視覚的に表示。',
+    s_req_h: 'システム要件',
+    s_req_rec: '推奨: macOS 14.6+',
+    s_vjdeck_h: 'VJDeckと一緒に使う',
+    s_vjdeck_p: '映像ファイルをSearch Everythingで素早く見つけて、<a href="index.html">VJDeck</a>のプレイリストにドラッグすれば、ライブ現場で曲に合う映像をすぐに見つけて再生できます。',
+  },
+  en: {
+    s_desc: 'Blazing-fast file search for macOS. Results appear as you type. Built for finding videos quickly during live VJ sets.',
+    s_dl: 'Download on GitHub',
+    s_about_h: 'About',
+    s_about_p: 'A file search utility originally built to find anime music videos quickly during live VJ performances. Memory-based indexing lets you search tens of thousands of files in real time. If Spotlight or Finder search feels too slow or inaccurate, this is the answer.',
+    s_feat_h: 'Features',
+    sf1_h: 'Real-time search', sf1_p: 'Results appear as you type. Memory-based indexing means zero delay even with tens of thousands of files.',
+    sf2_h: 'Quick Look', sf2_p: 'Press spacebar to preview. Switch between files with arrow keys or mouse.',
+    sf3_h: 'Batch rename', sf3_p: 'Rename multiple files at once directly from search results.',
+    sf4_h: 'Finder integration', sf4_p: 'Delete files, drag to copy or move. Works just like Finder.',
+    sf5_h: 'Quote keyword locking', sf5_p: 'Wrap repeated words in quotes to search for an exact phrase.',
+    sf6_h: 'Naming pattern view', sf6_p: 'Visualizes file naming patterns for files following specific conventions.',
+    s_req_h: 'System requirements',
+    s_req_rec: 'Recommended: macOS 14.6+',
+    s_vjdeck_h: 'Use with VJDeck',
+    s_vjdeck_p: 'Find video files instantly with Search Everything, drag them into <a href="index.html">VJDeck</a>\'s playlist, and you\'re ready to play the right video for the right track on stage.',
+  }
+};
+
+function setLang(lang) {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (T[lang] && T[lang][key]) el.innerHTML = T[lang][key];
+  });
+  document.querySelectorAll('.lang-sw button').forEach(b => b.classList.remove('active'));
+  document.getElementById('btn-' + lang).classList.add('active');
+  document.documentElement.lang = lang;
+  localStorage.setItem('vjdeck-lang', lang);
+}
+
+const saved = localStorage.getItem('vjdeck-lang');
+const browserLang = navigator.language.slice(0, 2);
+const initLang = saved || (['ja','en'].includes(browserLang) ? browserLang : 'ko');
+setLang(initLang);
+</script>
+
+</body>
+</html>
