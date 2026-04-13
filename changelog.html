@@ -51,16 +51,16 @@
   </div>
 
   <div class="version">
-    <h2>1.3.0</h2>
+    <h2>1.3.1</h2>
     <div class="date">2026-04-13</div>
     <h3 data-i18n="h_bugfix" style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:8px;"></h3>
     <ul>
-      <li data-i18n="v130_b1"></li>
+      <li data-i18n="v131_b1"></li>
     </ul>
-    <ul style="padding-left:16px;margin-top:4px;">
-      <li data-i18n="v130_b1a"></li>
-      <li data-i18n="v130_b1b"></li>
-      <li data-i18n="v130_b1c"></li>
+    <h3 data-i18n="h_new" style="font-size:13px;font-weight:600;color:var(--text);margin-top:16px;margin-bottom:8px;"></h3>
+    <ul>
+      <li data-i18n="v131_a1"></li>
+      <li data-i18n="v131_a2"></li>
     </ul>
   </div>
 
@@ -113,10 +113,9 @@ const T = {
     cl_sub: '업데이트 내역',
     h_bugfix: '버그 수정',
     h_new: '추가',
-    v130_b1: '일부 구형 파일을 읽을 수 없는 문제를 수정했습니다',
-    v130_b1a: '레거시 AVI 코덱 지원 추가 (DivX 3/msmpeg4v3, Cinepak, Indeo3, MS Video 1 등)',
-    v130_b1b: 'WMV 파일 재생 지원 추가 (WMV1/2/3, VC-1, ASF 디먹서, WMA 오디오)',
-    v130_b1c: 'ADPCM 오디오 디코더 추가 (구형 AVI 오디오 호환)',
+    v131_b1: '일부 AV1 영상이 재생되지 않는 문제를 수정했습니다 (libdav1d 디코더 도입)',
+    v131_a1: '비디오 코덱 지원 확대: ProRes, DV, MPEG-1, H.263, Raw Video, HuffYUV, FFV1',
+    v131_a2: 'MPEG-TS/PS 컨테이너 지원 추가',
     v102_b1: '실행 시 덱 윈도우 위치 복원 중 크래시가 발생할 수 있는 문제 수정',
     v101_b1: '윈도우 복원 관련 버그 수정',
     v101_b2: '덱 사이즈 조정 시 레이아웃 깨지는 증상 수정',
@@ -136,10 +135,9 @@ const T = {
     cl_sub: 'アップデート履歴',
     h_bugfix: 'バグ修正',
     h_new: '追加',
-    v130_b1: '一部の旧形式ファイルが読み込めない問題を修正しました',
-    v130_b1a: 'レガシーAVIコーデック対応追加（DivX 3/msmpeg4v3、Cinepak、Indeo3、MS Video 1等）',
-    v130_b1b: 'WMVファイル再生対応追加（WMV1/2/3、VC-1、ASFデマクサー、WMAオーディオ）',
-    v130_b1c: 'ADPCMオーディオデコーダー追加（旧型AVIオーディオ互換）',
+    v131_b1: '一部のAV1動画が再生されない問題を修正しました（libdav1dデコーダー導入）',
+    v131_a1: 'ビデオコーデック対応拡大：ProRes、DV、MPEG-1、H.263、Raw Video、HuffYUV、FFV1',
+    v131_a2: 'MPEG-TS/PSコンテナ対応追加',
     v102_b1: '起動時にデッキウィンドウの位置復元中にクラッシュする可能性がある問題を修正',
     v101_b1: 'ウィンドウ復元関連のバグを修正',
     v101_b2: 'デッキサイズ変更時にレイアウトが崩れる問題を修正',
@@ -159,10 +157,9 @@ const T = {
     cl_sub: 'Release history',
     h_bugfix: 'Bug Fixes',
     h_new: 'New',
-    v130_b1: 'Fixed an issue where some legacy files could not be loaded',
-    v130_b1a: 'Added legacy AVI codec support (DivX 3/msmpeg4v3, Cinepak, Indeo3, MS Video 1, etc.)',
-    v130_b1b: 'Added WMV file playback support (WMV1/2/3, VC-1, ASF demuxer, WMA audio)',
-    v130_b1c: 'Added ADPCM audio decoder (legacy AVI audio compatibility)',
+    v131_b1: 'Fixed some AV1 videos not playing (introduced libdav1d decoder)',
+    v131_a1: 'Expanded video codec support: ProRes, DV, MPEG-1, H.263, Raw Video, HuffYUV, FFV1',
+    v131_a2: 'Added MPEG-TS/PS container support',
     v102_b1: 'Fixed a crash that could occur on launch when restoring deck window positions',
     v101_b1: 'Fixed window restoration bugs',
     v101_b2: 'Fixed layout breaking when resizing decks',
