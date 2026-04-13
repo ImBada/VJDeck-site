@@ -51,6 +51,39 @@
   </div>
 
   <div class="version">
+    <h2>1.4.0</h2>
+    <div class="date">2026-04-14</div>
+    <h3 data-i18n="h_new" style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:8px;"></h3>
+    <ul>
+      <li data-i18n="v140_a1"></li>
+    </ul>
+    <ul style="padding-left:16px;margin-top:4px;">
+      <li data-i18n="v140_a1a"></li>
+      <li data-i18n="v140_a1b"></li>
+      <li data-i18n="v140_a1c"></li>
+      <li data-i18n="v140_a1d"></li>
+    </ul>
+    <h3 data-i18n="h_improve" style="font-size:13px;font-weight:600;color:var(--text);margin-top:16px;margin-bottom:8px;"></h3>
+    <ul>
+      <li data-i18n="v140_i1"></li>
+    </ul>
+    <ul style="padding-left:16px;margin-top:4px;">
+      <li data-i18n="v140_i1a"></li>
+      <li data-i18n="v140_i1b"></li>
+    </ul>
+    <ul>
+      <li data-i18n="v140_i2"></li>
+    </ul>
+    <ul style="padding-left:16px;margin-top:4px;">
+      <li data-i18n="v140_i2a"></li>
+      <li data-i18n="v140_i2b"></li>
+    </ul>
+    <ul>
+      <li data-i18n="v140_i3"></li>
+    </ul>
+  </div>
+
+  <div class="version">
     <h2>1.3.4</h2>
     <div class="date">2026-04-13</div>
     <h3 data-i18n="h_bugfix" style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:8px;"></h3>
@@ -158,6 +191,19 @@ const T = {
     cl_sub: '업데이트 내역',
     h_bugfix: '버그 수정',
     h_new: '추가',
+    h_improve: '개선',
+    v140_a1: '덱별 오디오 출력 장치 선택',
+    v140_a1a: '각 덱에 출력 장치 선택 버튼 추가 (음소거 버튼 왼쪽)',
+    v140_a1b: 'App Default / System Default / 개별 장치 3단계 선택 지원',
+    v140_a1c: 'Settings의 글로벌 Output은 "App Default"의 기본값으로 유지됨',
+    v140_a1d: '앱 재시작 시 덱별 설정은 초기화됨',
+    v140_i1: 'AUTO SYNC 알고리즘 개선 — 소프트 싱크 처리 도입',
+    v140_i1a: '미세한 drift(20~300ms)는 재생 속도 미세 조정(±15%)으로 프레임 점프 없이 수렴',
+    v140_i1b: '300ms 초과 시에만 하드 seek, 20ms 미만은 무시',
+    v140_i2: '안정성 개선',
+    v140_i2a: '재생이 멈추면 AUTO SYNC 자동 종료',
+    v140_i2b: 'AUTO SYNC 알고리즘 대폭 개선',
+    v140_i3: '각종 성능 / 메모리 사용량 최적화',
     v134_b1: '덱 내부 "새 덱 열기" 버튼으로 열린 윈도우에 상단 타이틀바가 표시되던 문제를 수정했습니다',
     v134_a1: '설정에서 툴바 버튼(새 덱, 플레이리스트, 마스터 아웃풋) 숨기기 옵션 추가',
     v133_b1: '일부 Mac에서 첫 실행 시 앱이 크래시되는 문제를 수정했습니다',
@@ -188,6 +234,19 @@ const T = {
     cl_sub: 'アップデート履歴',
     h_bugfix: 'バグ修正',
     h_new: '追加',
+    h_improve: '改善',
+    v140_a1: 'デッキ別オーディオ出力デバイス選択',
+    v140_a1a: '各デッキに出力デバイス選択ボタンを追加（ミュートボタンの左）',
+    v140_a1b: 'App Default / System Default / 個別デバイスの3段階選択に対応',
+    v140_a1c: 'SettingsのグローバルOutputは"App Default"のデフォルト値として維持',
+    v140_a1d: 'アプリ再起動時、デッキ別設定はリセットされます',
+    v140_i1: 'AUTO SYNCアルゴリズム改善 — ソフト同期処理を導入',
+    v140_i1a: '微小なドリフト(20~300ms)は再生速度の微調整(±15%)でフレームジャンプなしで収束',
+    v140_i1b: '300ms超過時のみハードシーク、20ms未満は無視',
+    v140_i2: '安定性改善',
+    v140_i2a: '再生が停止したらAUTO SYNCを自動終了',
+    v140_i2b: 'AUTO SYNCアルゴリズムを大幅改善',
+    v140_i3: '各種パフォーマンス / メモリ使用量最適化',
     v134_b1: 'デッキ内の「新しいデッキを開く」ボタンで開いたウィンドウにタイトルバーが表示される問題を修正しました',
     v134_a1: '設定でツールバーボタン（新しいデッキ、プレイリスト、マスター出力）を非表示にするオプションを追加',
     v133_b1: '一部のMacで初回起動時にアプリがクラッシュする問題を修正しました',
@@ -218,6 +277,19 @@ const T = {
     cl_sub: 'Release history',
     h_bugfix: 'Bug Fixes',
     h_new: 'New',
+    h_improve: 'Improved',
+    v140_a1: 'Per-deck audio output device selection',
+    v140_a1a: 'Added output device selection button on each deck (left of the mute button)',
+    v140_a1b: 'Supports 3-tier selection: App Default / System Default / Individual device',
+    v140_a1c: 'Global Output in Settings remains the default for "App Default"',
+    v140_a1d: 'Per-deck settings are reset on app restart',
+    v140_i1: 'AUTO SYNC algorithm improvement — soft sync processing introduced',
+    v140_i1a: 'Minor drift (20–300ms) converges via subtle playback speed adjustment (±15%) without frame jumps',
+    v140_i1b: 'Hard seek only when drift exceeds 300ms; drift under 20ms is ignored',
+    v140_i2: 'Stability improvements',
+    v140_i2a: 'AUTO SYNC automatically stops when playback stops',
+    v140_i2b: 'Major improvements to the AUTO SYNC algorithm',
+    v140_i3: 'Various performance and memory usage optimizations',
     v134_b1: 'Fixed the "Open New Deck" button inside a deck window showing a title bar on the new window',
     v134_a1: 'Added option to hide toolbar buttons (New Deck, Playlist, Master Output) in settings',
     v133_b1: 'Fixed a crash on first launch on some Macs',
