@@ -51,6 +51,26 @@
   </div>
 
   <div class="version">
+    <h2>1.4.6</h2>
+    <div class="date">2026-04-20</div>
+    <h3 data-i18n="h_new" style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:8px;"></h3>
+    <ul>
+      <li data-i18n="v146_a1"></li>
+      <li data-i18n="v146_a2"></li>
+      <li data-i18n="v146_a3"></li>
+    </ul>
+    <h3 data-i18n="h_improve" style="font-size:13px;font-weight:600;color:var(--text);margin-top:16px;margin-bottom:8px;"></h3>
+    <ul>
+      <li data-i18n="v146_i1"></li>
+      <li data-i18n="v146_i2"></li>
+      <li data-i18n="v146_i3"></li>
+      <li data-i18n="v146_i4"></li>
+      <li data-i18n="v146_i5"></li>
+      <li data-i18n="v146_i6"></li>
+    </ul>
+  </div>
+
+  <div class="version">
     <h2>1.4.5</h2>
     <div class="date">2026-04-19</div>
     <h3 data-i18n="h_fix" style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:8px;"></h3>
@@ -245,6 +265,15 @@ const T = {
     h_new: '추가',
     h_improve: '개선',
     h_fix: '수정',
+    v146_a1: '<strong>CUE 버튼</strong> — 정지 버튼이 CUE 버튼으로 변경 (일반적인 DJ 소프트웨어와 동일한 동작)',
+    v146_a2: '<strong>10-bit HEVC 영상</strong> 지원',
+    v146_a3: '<strong>DTS-HD / AC-3 / E-AC-3 / TrueHD</strong> 오디오 디코더 지원 (블루레이 오디오)',
+    v146_i1: 'CUE가 없는 파일 로드 시 시작 지점이 자동으로 큐로 설정됨',
+    v146_i2: '매핑 모드에서 SLOW/FAST 버튼 클릭 안 되던 현상 수정',
+    v146_i3: '플레이리스트 창 항상-위 동작 제거',
+    v146_i4: '플레이리스트 UI 개선',
+    v146_i5: 'MIDI CC 버튼 정상적으로 동작하도록 수정',
+    v146_i6: '스크래치 릴리즈 후 간헐적인 위치 드리프트 수정 및 마커 색상 조정',
     v145_i1: '장시간 반복 재생 시 멈춤 현상 수정',
     v144_i1: '오디오/비디오 타이밍 동기화 개선',
     v143_i1: '덱 간 간섭 제거 및 로드/언로드 race 정리 — 연속 로드, 로딩 중 eject, Master Output 재오픈 등 동시 조작 안정성 향상',
@@ -298,6 +327,15 @@ const T = {
     h_new: '追加',
     h_improve: '改善',
     h_fix: '修正',
+    v146_a1: '<strong>CUEボタン</strong> — 停止ボタンをCUEボタンに変更（一般的なDJソフトウェアと同じ動作）',
+    v146_a2: '<strong>10-bit HEVC動画</strong>対応',
+    v146_a3: '<strong>DTS-HD / AC-3 / E-AC-3 / TrueHD</strong>オーディオデコーダー対応（Blu-rayオーディオ）',
+    v146_i1: 'CUEポイントのないファイル読み込み時、開始位置が自動的にキューポイントに設定される',
+    v146_i2: 'マッピングモードでSLOW/FASTボタンがクリックできない問題を修正',
+    v146_i3: 'プレイリストウィンドウの常時最前面表示を削除',
+    v146_i4: 'プレイリストUIを改善',
+    v146_i5: 'MIDI CCボタンが正常に動作するように修正',
+    v146_i6: 'スクラッチリリース後の間欠的位置ドリフト修正およびマーカー色調整',
     v145_i1: '長時間ループ再生時のフリーズを修正',
     v144_i1: 'オーディオ/ビデオのタイミング同期を改善',
     v143_i1: 'デッキ間の干渉除去およびロード/アンロードのrace条件整理 — 連続ロード、ロード中のeject、Master Output再オープンなど同時操作の安定性向上',
@@ -351,6 +389,15 @@ const T = {
     h_new: 'New',
     h_improve: 'Improved',
     h_fix: 'Fixed',
+    v146_a1: '<strong>CUE button</strong> — Stop button replaced with CUE button (same behavior as standard DJ software)',
+    v146_a2: '<strong>10-bit HEVC video</strong> support',
+    v146_a3: '<strong>DTS-HD / AC-3 / E-AC-3 / TrueHD</strong> audio decoder support (Blu-ray audio)',
+    v146_i1: 'Starting point is automatically set as cue point when loading a file without a cue point',
+    v146_i2: 'Fixed SLOW/FAST buttons not clickable in mapping mode',
+    v146_i3: 'Removed always-on-top behavior from playlist window',
+    v146_i4: 'Improved playlist UI',
+    v146_i5: 'Fixed MIDI CC buttons not working properly',
+    v146_i6: 'Fixed intermittent position drift after scratch release and adjusted marker colors',
     v145_i1: 'Fixed freeze during long looped playback',
     v144_i1: 'Improved audio/video timing sync',
     v143_i1: 'Removed cross-deck state interference and race conditions in load/unload — improved stability when rapidly loading, ejecting mid-load, or reopening Master Output',
