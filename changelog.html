@@ -51,6 +51,16 @@
   </div>
 
   <div class="version">
+    <h2>1.4.13</h2>
+    <div class="date">2026-05-02</div>
+    <h3 data-i18n="h_fix" style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:8px;"></h3>
+    <ul>
+      <li data-i18n="v1413_f1"></li>
+      <li data-i18n="v1413_f2"></li>
+    </ul>
+  </div>
+
+  <div class="version">
     <h2>1.4.12</h2>
     <div class="date">2026-04-26</div>
     <h3 data-i18n="h_new" style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:8px;"></h3>
@@ -333,6 +343,8 @@ const T = {
     h_bugfix: '버그 수정',
     h_new: '추가',
     h_improve: '개선',
+    v1413_f1: '서로 다른 해상도의 덱으로 전환할 때 Master Syphon 출력이 뒤집히거나 작아질 수 있던 문제 수정',
+    v1413_f2: '사용할 수 없는 오디오 출력 장치가 선택되어 있을 때 기본 출력으로 안전하게 대체되도록 수정',
     v1410_i1: '속도 조절(Slow/Fast) 값이 앱 재시작 후에도 유지되도록 개선',
     v1410_i2: '영상 및 오디오 로딩 속도 대폭 개선',
     v1410_f1: '마이크 권한 처리 수정',
@@ -407,6 +419,8 @@ const T = {
     h_bugfix: 'バグ修正',
     h_new: '追加',
     h_improve: '改善',
+    v1413_f1: '異なる解像度のデッキへ切り替えた際、Master Syphon出力が反転したり小さくなったりする場合がある問題を修正',
+    v1413_f2: '使用できないオーディオ出力デバイスが選択されている場合、安全にデフォルト出力へフォールバックするよう修正',
     v1410_i1: '速度調整(Slow/Fast)値がアプリ再起動後も保持されるように改善',
     v1410_i2: '動画・オーディオの読み込み速度を大幅に改善',
     v1412_a1: 'Panel Snap、Panel Slide、Impact Cutトランジションエフェクトを追加',
@@ -482,6 +496,8 @@ const T = {
     h_new: 'New',
     h_improve: 'Improved',
     h_fix: 'Fixed',
+    v1413_f1: 'Fixed Master Syphon output occasionally flipping or shrinking when switching between decks with different resolutions',
+    v1413_f2: 'Fixed audio output safely falling back to the default device when the selected output is unavailable',
     v1410_i1: 'Slow/Fast speed settings now persist across app restarts',
     v1412_a1: 'Added Panel Snap, Panel Slide, and Impact Cut transition effects',
     v1411_i1: 'Changed Master Output transition effect selection UI from horizontal scroll to dropdown menu',
