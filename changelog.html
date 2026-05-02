@@ -51,6 +51,16 @@
   </div>
 
   <div class="version">
+    <h2>1.4.14</h2>
+    <div class="date">2026-05-02</div>
+    <h3 data-i18n="h_improve" style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:8px;"></h3>
+    <ul>
+      <li data-i18n="v1414_i1"></li>
+      <li data-i18n="v1414_i2"></li>
+    </ul>
+  </div>
+
+  <div class="version">
     <h2>1.4.13</h2>
     <div class="date">2026-05-02</div>
     <h3 data-i18n="h_fix" style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:8px;"></h3>
@@ -343,6 +353,8 @@ const T = {
     h_bugfix: '버그 수정',
     h_new: '추가',
     h_improve: '개선',
+    v1414_i1: 'Master Output 창과 전체화면 출력이 각각 독립 렌더러를 사용하도록 변경하여 동시 출력 안정성 개선',
+    v1414_i2: '오디오 출력 장치 fallback 처리와 출력 지연 계산을 보강하여 장치 변경 시 안정성 개선',
     v1413_f1: '서로 다른 해상도의 덱으로 전환할 때 Master Syphon 출력이 뒤집히거나 작아질 수 있던 문제 수정',
     v1413_f2: '사용할 수 없는 오디오 출력 장치가 선택되어 있을 때 기본 출력으로 안전하게 대체되도록 수정',
     v1410_i1: '속도 조절(Slow/Fast) 값이 앱 재시작 후에도 유지되도록 개선',
@@ -419,6 +431,8 @@ const T = {
     h_bugfix: 'バグ修正',
     h_new: '追加',
     h_improve: '改善',
+    v1414_i1: 'Master Outputウィンドウとフルスクリーン出力がそれぞれ独立したレンダラーを使うように変更し、同時出力の安定性を改善',
+    v1414_i2: 'オーディオ出力デバイスのフォールバック処理と出力レイテンシ計算を強化し、デバイス変更時の安定性を改善',
     v1413_f1: '異なる解像度のデッキへ切り替えた際、Master Syphon出力が反転したり小さくなったりする場合がある問題を修正',
     v1413_f2: '使用できないオーディオ出力デバイスが選択されている場合、安全にデフォルト出力へフォールバックするよう修正',
     v1410_i1: '速度調整(Slow/Fast)値がアプリ再起動後も保持されるように改善',
@@ -496,6 +510,8 @@ const T = {
     h_new: 'New',
     h_improve: 'Improved',
     h_fix: 'Fixed',
+    v1414_i1: 'Improved simultaneous Master Output stability by using separate renderers for the main window and fullscreen output',
+    v1414_i2: 'Improved audio output device fallback handling and output latency calculation during device changes',
     v1413_f1: 'Fixed Master Syphon output occasionally flipping or shrinking when switching between decks with different resolutions',
     v1413_f2: 'Fixed audio output safely falling back to the default device when the selected output is unavailable',
     v1410_i1: 'Slow/Fast speed settings now persist across app restarts',
