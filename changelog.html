@@ -57,6 +57,21 @@
   </div>
 
   <div class="version">
+    <h2>1.4.21</h2>
+    <div class="date">2026-08-26</div>
+    <h3 data-i18n="h_improve" style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:8px;"></h3>
+    <ul>
+      <li data-i18n="v1421_i1"></li>
+      <li data-i18n="v1421_i2"></li>
+    </ul>
+    <h3 data-i18n="h_fix" style="font-size:13px;font-weight:600;color:var(--text);margin-top:16px;margin-bottom:8px;"></h3>
+    <ul>
+      <li data-i18n="v1421_f1"></li>
+      <li data-i18n="v1421_f2"></li>
+    </ul>
+  </div>
+
+  <div class="version">
     <h2>1.4.20</h2>
     <div class="date">2026-08-04</div>
     <h3 data-i18n="h_new" style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:8px;"></h3>
@@ -423,6 +438,10 @@ const T = {
     h_bugfix: '버그 수정',
     h_new: '추가',
     h_improve: '개선',
+    v1421_i1: 'MIDI 입력 및 매핑 안정성 개선 — 한 패킷의 여러 메시지를 처리하고 장치·채널·UMP 그룹별 매핑을 구분',
+    v1421_i2: 'CUE, SLOW/FAST 등 홀드 컨트롤과 컨트롤러 피드백, MIDI 장치 연결 변경 시 상태 처리 개선',
+    v1421_f1: 'Crossfade, Opacity, Volume을 직접 조작할 때 대기 중인 MIDI 입력이 값을 되돌릴 수 있던 문제 수정',
+    v1421_f2: '매핑 대상을 선택하기 전에 수신된 MIDI 입력이 잘못 등록될 수 있던 문제 수정',
     v1420_a1: '이미지 및 PDF 파일 지원 추가',
     v1419_f1: 'AUTO SYNC 중 마이크 입력 장치의 포맷 또는 샘플레이트가 바뀔 때 발생할 수 있던 크래시 수정',
     v1419_f2: '마이크 입력이 일시적으로 끊기거나 변경되어도 AUTO SYNC가 더 안정적으로 다시 연결되도록 개선',
@@ -514,6 +533,10 @@ const T = {
     h_bugfix: 'バグ修正',
     h_new: '追加',
     h_improve: '改善',
+    v1421_i1: 'MIDI入力とマッピングの安定性を改善 — 1つのパケット内の複数メッセージを処理し、デバイス・チャンネル・UMPグループごとにマッピングを区別',
+    v1421_i2: 'CUE、SLOW/FASTなどのホールド操作、コントローラーフィードバック、MIDIデバイスの接続変更時の状態処理を改善',
+    v1421_f1: 'Crossfade、Opacity、Volumeを直接操作中、待機中のMIDI入力によって値が元に戻る場合がある問題を修正',
+    v1421_f2: 'マッピング対象を選択する前に受信したMIDI入力が誤って登録される場合がある問題を修正',
     v1420_a1: '画像およびPDFファイルのサポートを追加',
     v1419_f1: 'AUTO SYNC中にマイク入力デバイスのフォーマットまたはサンプルレートが変わると発生する場合があったクラッシュを修正',
     v1419_f2: 'マイク入力が一時的に切断または変更されても、AUTO SYNCがより安定して再接続されるよう改善',
@@ -606,6 +629,10 @@ const T = {
     h_new: 'New',
     h_improve: 'Improved',
     h_fix: 'Fixed',
+    v1421_i1: 'Improved MIDI input and mapping reliability, including multiple messages per packet and device-, channel-, and UMP group-aware mappings',
+    v1421_i2: 'Improved held controls such as CUE and SLOW/FAST, controller feedback, and state handling when MIDI devices are connected or disconnected',
+    v1421_f1: 'Fixed queued MIDI input potentially overriding Crossfade, Opacity, or Volume while dragging the controls directly',
+    v1421_f2: 'Fixed MIDI input received before selecting a mapping target being assigned accidentally',
     v1420_a1: 'Added support for image and PDF files',
     v1419_f1: 'Fixed a crash that could occur when the microphone input format or sample rate changed during AUTO SYNC',
     v1419_f2: 'Improved AUTO SYNC reconnection stability when microphone input is temporarily interrupted or changed',
