@@ -57,6 +57,15 @@
   </div>
 
   <div class="version">
+    <h2>1.4.22</h2>
+    <div class="date" data-i18n="coming_soon"></div>
+    <h3 data-i18n="h_fix" style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:8px;"></h3>
+    <ul>
+      <li data-i18n="v1422_f1"></li>
+    </ul>
+  </div>
+
+  <div class="version">
     <h2>1.4.21</h2>
     <div class="date">2026-08-26</div>
     <h3 data-i18n="h_new" style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:8px;"></h3>
@@ -439,9 +448,11 @@
 const T = {
   ko: {
     cl_sub: '업데이트 내역',
+    coming_soon: '출시 예정',
     h_bugfix: '버그 수정',
     h_new: '추가',
     h_improve: '개선',
+    v1422_f1: 'Rate Fader의 방향을 위쪽 감속(−), 아래쪽 가속(+)으로 수정',
     v1421_a1: '덱 오른쪽에 기본 재생 속도를 조절하는 세로 페이더 추가 (0.90×~1.10×, 우클릭으로 1.00× 초기화)',
     v1421_i1: 'MIDI 입력 및 매핑 안정성 개선 — 한 패킷의 여러 메시지를 처리하고 장치·채널·UMP 그룹별 매핑을 구분',
     v1421_i2: 'CUE, SLOW/FAST 등 홀드 컨트롤과 컨트롤러 피드백, MIDI 장치 연결 변경 시 상태 처리 개선',
@@ -535,9 +546,11 @@ const T = {
   },
   ja: {
     cl_sub: 'アップデート履歴',
+    coming_soon: '近日公開',
     h_bugfix: 'バグ修正',
     h_new: '追加',
     h_improve: '改善',
+    v1422_f1: 'Rate Faderの方向を上側が減速（−）、下側が加速（+）になるよう修正',
     v1421_a1: 'デッキの右側にデフォルト再生速度を調整する縦型フェーダーを追加（0.90×～1.10×、右クリックで1.00×にリセット）',
     v1421_i1: 'MIDI入力とマッピングの安定性を改善 — 1つのパケット内の複数メッセージを処理し、デバイス・チャンネル・UMPグループごとにマッピングを区別',
     v1421_i2: 'CUE、SLOW/FASTなどのホールド操作、コントローラーフィードバック、MIDIデバイスの接続変更時の状態処理を改善',
@@ -631,10 +644,12 @@ const T = {
   },
   en: {
     cl_sub: 'Release history',
+    coming_soon: 'Coming soon',
     h_bugfix: 'Bug Fixes',
     h_new: 'New',
     h_improve: 'Improved',
     h_fix: 'Fixed',
+    v1422_f1: 'Fixed the Rate Fader direction so slowdown (−) is at the top and speedup (+) is at the bottom',
     v1421_a1: 'Added a vertical fader to the right of each deck for adjusting the default playback speed (0.90×–1.10×; right-click to reset to 1.00×)',
     v1421_i1: 'Improved MIDI input and mapping reliability, including multiple messages per packet and device-, channel-, and UMP group-aware mappings',
     v1421_i2: 'Improved held controls such as CUE and SLOW/FAST, controller feedback, and state handling when MIDI devices are connected or disconnected',
