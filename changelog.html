@@ -57,6 +57,17 @@
   </div>
 
   <div class="version">
+    <h2>1.5.0</h2>
+    <div class="date">2026-08-31</div>
+    <h3 data-i18n="h_improve" style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:8px;"></h3>
+    <ul>
+      <li data-i18n="v150_i1"></li>
+      <li data-i18n="v150_i2"></li>
+      <li data-i18n="v150_i3"></li>
+    </ul>
+  </div>
+
+  <div class="version">
     <h2>1.4.24</h2>
     <div class="date">2026-08-29</div>
     <h3 data-i18n="h_new" style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:8px;"></h3>
@@ -477,6 +488,9 @@ const T = {
     h_bugfix: '버그 수정',
     h_new: '추가',
     h_improve: '개선',
+    v150_i1: 'AUTO SYNC 알고리즘을 대대적으로 개편 — 전체 파형 FFT 교차 상관 방식에서 ShazamKit custom catalog 기반 실시간 위치 매칭으로 교체',
+    v150_i2: '외부 음원의 실제 재생 속도와 Master Tempo를 추적하고, 구간 점프 시 자동으로 다시 동기화하도록 개선',
+    v150_i3: '매칭 속도와 안정성을 높이고, AUTO SYNC 종료 시 덱에 설정한 기본 재생 속도로 자연스럽게 복귀하도록 개선',
     v1424_a1: '설정에서 사용할 MIDI 장비를 지정하는 기능 추가',
     v1423_a1: '온라인 비디오 URL 재생 기능 추가 (빠른 로드를 위해 720p로 제한됩니다)',
     v1423_a2: '설정 창 개편',
@@ -581,6 +595,9 @@ const T = {
     h_bugfix: 'バグ修正',
     h_new: '追加',
     h_improve: '改善',
+    v150_i1: 'AUTO SYNCアルゴリズムを全面刷新 — 全波形のFFT相互相関方式から、ShazamKitカスタムカタログによるリアルタイム位置マッチングへ移行',
+    v150_i2: '外部音源の実際の再生速度とMaster Tempoを追跡し、セクションジャンプ時に自動で再同期するよう改善',
+    v150_i3: 'マッチング速度と安定性を高め、AUTO SYNC終了時にデッキで設定した基本再生速度へ自然に戻るよう改善',
     v1424_a1: '設定で使用するMIDI機器を指定する機能を追加',
     v1423_a1: 'オンライン動画URLの再生機能を追加（高速な読み込みのため、720pに制限されます）',
     v1423_a2: '設定画面を刷新',
@@ -686,6 +703,9 @@ const T = {
     h_new: 'New',
     h_improve: 'Improved',
     h_fix: 'Fixed',
+    v150_i1: 'Major AUTO SYNC overhaul — replaced full-waveform FFT cross-correlation with real-time position matching powered by a ShazamKit custom catalog',
+    v150_i2: 'Added tracking for the external source\'s actual playback rate and Master Tempo, with automatic re-sync after section jumps',
+    v150_i3: 'Improved matching speed and stability, and made playback return smoothly to each deck\'s configured base rate when AUTO SYNC ends',
     v1424_a1: 'Added an option to select the MIDI device in Settings',
     v1423_a1: 'Added online video URL playback (limited to 720p for faster loading)',
     v1423_a2: 'Redesigned the Settings window',
