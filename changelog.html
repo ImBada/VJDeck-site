@@ -57,6 +57,31 @@
   </div>
 
   <div class="version">
+    <h2>1.5.2</h2>
+    <div class="date">2026-09-07</div>
+    <h3 data-i18n="h_new" style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:8px;"></h3>
+    <ul>
+      <li data-i18n="v152_a1"></li>
+      <li data-i18n="v152_a2"></li>
+      <li data-i18n="v152_a3"></li>
+      <li data-i18n="v152_a4"></li>
+      <li data-i18n="v152_a5"></li>
+    </ul>
+    <h3 data-i18n="h_improve" style="font-size:13px;font-weight:600;color:var(--text);margin-top:16px;margin-bottom:8px;"></h3>
+    <ul>
+      <li data-i18n="v152_i1"></li>
+      <li data-i18n="v152_i2"></li>
+      <li data-i18n="v152_i3"></li>
+    </ul>
+    <h3 data-i18n="h_fix" style="font-size:13px;font-weight:600;color:var(--text);margin-top:16px;margin-bottom:8px;"></h3>
+    <ul>
+      <li data-i18n="v152_f1"></li>
+      <li data-i18n="v152_f2"></li>
+      <li data-i18n="v152_f3"></li>
+    </ul>
+  </div>
+
+  <div class="version">
     <h2>1.5.1</h2>
     <div class="date">2026-08-31</div>
     <h3 data-i18n="h_improve" style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:8px;"></h3>
@@ -493,6 +518,17 @@
 <script>
 const T = {
   ko: {
+    v152_a1: "<strong>빌트인 SearchEverything 파일 검색</strong>: 인덱싱 기반 검색 엔진. 지정한 폴더에서 파일명과 상위 폴더명으로 검색하고, 검색 결과를 덱이나 플레이리스트에 추가할 수 있습니다. 검색 조건 저장, 최근 검색, Quick Look도 지원합니다.",
+    v152_a2: "<strong>ALL 플레이리스트</strong>: 전체 플레이리스트와 재생 기록의 미디어를 중복 없이 모아 보여줍니다.",
+    v152_a3: "각 플레이리스트 내 항목 검색 기능을 추가했습니다.",
+    v152_a4: "원본 파일명 변경 없이 플레이리스트 항목의 표시 이름을 수정할 수 있습니다.",
+    v152_a5: "여러 항목을 다른 플레이리스트로 드래그해 복사할 수 있습니다.",
+    v152_i1: "온라인 영상 가져오기 지원 범위를 YouTube 외 사이트로 확대했습니다.",
+    v152_i2: "플레이리스트 전환 및 창 재오픈 시 선택 항목, 검색어와 스크롤 위치를 앱 실행 중 유지합니다.",
+    v152_i3: "플레이리스트와 검색 결과의 키보드 탐색, 다중 선택 및 드래그 동작을 개선했습니다.",
+    v152_f1: "오디오 정규화 설정에 따른 음량 보정 오류를 수정했습니다.",
+    v152_f2: "오디오가 없는 영상의 일시정지 후 재개 시 재생 위치가 잘못되는 문제를 수정했습니다.",
+    v152_f3: "영상 끝부분의 프레임 누락과 반복 재생·재생 위치 이동 간 충돌을 수정했습니다.",
     cl_sub: '업데이트 내역',
     coming_soon: '출시 예정',
     h_bugfix: '버그 수정',
@@ -602,6 +638,17 @@ const T = {
     c9: '플레이리스트, M3U 가져오기/내보내기',
   },
   ja: {
+    v152_a1: "<strong>内蔵SearchEverythingファイル検索</strong>：インデックスベースの検索エンジン。指定したフォルダ内をファイル名や上位フォルダ名で検索し、検索結果をデッキやプレイリストに追加できます。検索条件の保存、最近の検索、Quick Lookにも対応しています。",
+    v152_a2: "<strong>ALLプレイリスト</strong>：すべてのプレイリストと再生履歴に含まれるメディアを、重複なくまとめて表示します。",
+    v152_a3: "各プレイリスト内の項目を検索できるようになりました。",
+    v152_a4: "元のファイル名を変更せずに、プレイリスト項目の表示名を編集できるようになりました。",
+    v152_a5: "複数の項目を別のプレイリストにドラッグしてコピーできるようになりました。",
+    v152_i1: "オンライン動画の取り込みに対応するサイトをYouTube以外にも拡大しました。",
+    v152_i2: "アプリの実行中は、プレイリストの切り替えやウィンドウの再表示後も、選択項目、検索語、スクロール位置を保持します。",
+    v152_i3: "プレイリストと検索結果でのキーボード操作、複数選択、ドラッグ操作を改善しました。",
+    v152_f1: "オーディオ正規化設定による音量補正の不具合を修正しました。",
+    v152_f2: "音声のない動画を一時停止してから再開すると、再生位置がずれる問題を修正しました。",
+    v152_f3: "動画の終端でフレームが欠落する問題と、ループ再生とシークが競合する問題を修正しました。",
     cl_sub: 'アップデート履歴',
     coming_soon: '近日公開',
     h_bugfix: 'バグ修正',
@@ -711,6 +758,17 @@ const T = {
     c9: 'プレイリスト、M3Uインポート/エクスポート',
   },
   en: {
+    v152_a1: "<strong>Built-in SearchEverything file search</strong>: An index-based search engine. Search a chosen folder by filename and parent folder names, then add results to a deck or playlist. Includes saved searches, recent searches, and Quick Look.",
+    v152_a2: "<strong>ALL playlist</strong>: View media from all playlists and playback history in one place, without duplicates.",
+    v152_a3: "Added item search within each playlist.",
+    v152_a4: "Edit playlist item display names without changing the original filenames.",
+    v152_a5: "Drag multiple items to another playlist to copy them.",
+    v152_i1: "Expanded online video import support to sites beyond YouTube.",
+    v152_i2: "Preserve selected items, search queries, and scroll positions when switching playlists or reopening the window during the current app session.",
+    v152_i3: "Improved keyboard navigation, multiple selection, and dragging in playlists and search results.",
+    v152_f1: "Fixed incorrect volume compensation when applying audio normalization settings.",
+    v152_f2: "Fixed incorrect playback positions when resuming videos without audio after pausing.",
+    v152_f3: "Fixed missing frames at the end of videos and conflicts between loop playback and seeking.",
     cl_sub: 'Release history',
     coming_soon: 'Coming soon',
     h_bugfix: 'Bug Fixes',
