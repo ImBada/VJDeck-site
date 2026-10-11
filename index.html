@@ -242,6 +242,7 @@
     <h1 data-i18n="hero_h1"></h1>
     <p class="desc" data-i18n="hero_desc"></p>
     <a href="https://github.com/imbada/vjdeck-site/releases/latest/download/VJDeck.dmg" class="dl-btn" id="download" data-i18n="download_latest">최신 버전 다운로드</a>
+    <p style="margin-top:12px;font-size:13px;color:var(--text-dim);" data-i18n="release_info"></p>
     <div style="margin-top:12px">
       <img src="https://img.shields.io/github/downloads/imbada/VJDeck-site/total?style=flat&color=222&label=downloads&labelColor=111" alt="downloads">
       <img src="https://img.shields.io/github/v/release/imbada/VJDeck-site?style=flat&color=222&label=latest&labelColor=111" alt="version">
@@ -285,6 +286,8 @@
       <div class="feat-item"><h4 data-i18n="f7_h"></h4><p data-i18n="f7_p"></p></div>
       <div class="feat-item"><h4 data-i18n="f8_h"></h4><p data-i18n="f8_p"></p></div>
       <div class="feat-item"><h4 data-i18n="f9_h"></h4><p data-i18n="f9_p"></p></div>
+      <div class="feat-item"><h4 data-i18n="f10_h"></h4><p data-i18n="f10_p"></p></div>
+      <div class="feat-item"><h4 data-i18n="f11_h"></h4><p data-i18n="f11_p"></p></div>
     </div>
   </div>
 
@@ -369,11 +372,16 @@
 
 </div>
 
-<footer><div class="wrap">VJDeck &mdash; macOS 14+ &middot; Made by <a href="https://github.com/ImBada" target="_blank" style="color:var(--text-dim)">bada</a><br style="margin-bottom:4px">Uses <a href="https://ffmpeg.org" target="_blank" style="color:var(--text-dim)">FFmpeg</a> (LGPL 2.1), <a href="https://github.com/Syphon/Syphon-Framework" target="_blank" style="color:var(--text-dim)">Syphon</a> (BSD), and <a href="https://github.com/Signalsmith-Audio/signalsmith-stretch" target="_blank" style="color:var(--text-dim)">Signalsmith Stretch</a> (MIT)</div></footer>
+<footer><div class="wrap">VJDeck &mdash; Apple Silicon &middot; macOS 15.4+ &middot; Made by <a href="https://github.com/ImBada" target="_blank" style="color:var(--text-dim)">bada</a><br style="margin-bottom:4px">Uses <a href="https://ffmpeg.org" target="_blank" style="color:var(--text-dim)">FFmpeg</a> (LGPL 2.1), <a href="https://github.com/Syphon/Syphon-Framework" target="_blank" style="color:var(--text-dim)">Syphon</a> (BSD), and <a href="https://github.com/Signalsmith-Audio/signalsmith-stretch" target="_blank" style="color:var(--text-dim)">Signalsmith Stretch</a> (MIT)</div></footer>
 
 <script>
 const T = {
   ko: {
+    release_info: "v1.6.0 · Apple Silicon · macOS 15.4 이상",
+    f10_h: "재생 범위",
+    f10_p: "[ ] 브래킷으로 시작·종료 지점 지정. 루프, 핫큐와 Auto Sync도 범위 안에서 동작.",
+    f11_h: "자동 업데이트",
+    f11_p: "새 버전을 다운로드하고 앱 종료 시 설치. 기존 버전은 1.6.0을 한 번 수동으로 설치하세요.",
     download_latest: '최신 버전 다운로드',
     hero_h1: '틀고. 맞추고.<br>내보내고.',
     hero_desc: '라이브 현장을 위한 macOS 비디오 덱. 가볍고, 빠르고, 무료.',
@@ -406,6 +414,11 @@ const T = {
     search_tip: '영상 파일을 빠르게 찾고 싶다면 <a href="search.html" style="color:var(--accent)">Search Everything for Mac</a>과 함께 사용해 보세요.',
   },
   ja: {
+    release_info: "v1.6.0 · Apple Silicon · macOS 15.4以降",
+    f10_h: "再生範囲",
+    f10_p: "[ ] で開始・終了位置を指定。ループ、ホットキュー、Auto Syncも範囲内で動作します。",
+    f11_h: "自動アップデート",
+    f11_p: "新しいバージョンをダウンロードし、終了時にインストール。旧バージョンからは1.6.0を一度手動でインストールしてください。",
     download_latest: '最新版をダウンロード',
     hero_h1: '再生。同期。<br>出力。',
     hero_desc: 'ライブ現場のためのmacOSビデオデッキ。軽くて、速くて、無料。',
@@ -438,6 +451,11 @@ const T = {
     search_tip: '映像ファイルを素早く見つけたいなら <a href="search.html" style="color:var(--accent)">Search Everything for Mac</a> と一緒に使ってみてください。',
   },
   en: {
+    release_info: "v1.6.0 · Apple Silicon · macOS 15.4 or later",
+    f10_h: "Playback Range",
+    f10_p: "Set start and end points with [ ] brackets. Loops, hot cues, and Auto Sync stay within the range.",
+    f11_h: "Automatic Updates",
+    f11_p: "Downloads new versions and installs them when you quit. Install 1.6.0 manually once if you use an older version.",
     download_latest: 'Download Latest Version',
     hero_h1: 'Play. Sync.<br>Output.',
     hero_desc: 'A macOS video deck for live venues. Lightweight, fast, and free.',
