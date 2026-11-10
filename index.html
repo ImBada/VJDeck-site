@@ -280,7 +280,7 @@
       <div class="feat-item"><h4 data-i18n="f1_h"></h4><p data-i18n="f1_p"></p></div>
       <div class="feat-item"><h4 data-i18n="f2_h"></h4><p data-i18n="f2_p"></p></div>
       <div class="feat-item"><h4 data-i18n="f3_h"></h4><p data-i18n="f3_p"></p></div>
-      <div class="feat-item"><h4>MIDI</h4><p data-i18n="f4_p"></p></div>
+      <div class="feat-item"><h4>MIDI · OSC</h4><p data-i18n="f4_p"></p></div>
       <div class="feat-item"><h4 data-i18n="f5_h"></h4><p data-i18n="f5_p"></p></div>
       <div class="feat-item"><h4>Syphon</h4><p data-i18n="f6_p"></p></div>
       <div class="feat-item"><h4 data-i18n="f7_h"></h4><p data-i18n="f7_p"></p></div>
@@ -340,11 +340,11 @@
   <div class="section">
     <div class="show-row flip">
       <div class="show-text">
-        <h2>MIDI</h2>
+        <h2>MIDI · OSC</h2>
         <h3 data-i18n="mi_h3"></h3>
         <p data-i18n="mi_p"></p>
         <div class="tags">
-          <span class="tag">CoreMIDI</span><span class="tag">Note + CC</span>
+          <span class="tag">CoreMIDI</span><span class="tag">Note + CC</span><span class="tag">OSC</span>
           <span class="tag">Per-deck</span><span class="tag">Master</span>
         </div>
       </div>
@@ -376,7 +376,7 @@
 <script>
 const T = {
   ko: {
-    release_info: "v1.6.0 · Apple Silicon · macOS 15.4 이상",
+    release_info: "v1.7.0 · Apple Silicon · macOS 15.4 이상",
     f10_h: "재생 범위",
     f10_p: "[ ] 브래킷으로 시작·종료 지점 지정. 루프, 핫큐와 Auto Sync도 범위 안에서 동작.",
     download_latest: '최신 버전 다운로드',
@@ -392,7 +392,7 @@ const T = {
     f1_h: '멀티덱', f1_p: '최대 4개의 독립 비디오 덱. 각각 별도의 윈도우, Syphon 서버, 재생 컨트롤.',
     f2_h: '오디오 싱크', f2_p: '마이크로 라이브 음악을 잡아 ShazamKit 기반으로 비디오 위치와 재생 속도를 자동 동기화.',
     f3_h: 'Master Output', f3_p: 'A/B 크로스페이더 믹싱. Crossfade, Addition, Wipe. 전체화면 출력.',
-    f4_p: '하드웨어 컨트롤러 매핑. 재생, 루프, 크로스페이더, 음량 페이더.',
+    f4_p: '하드웨어 컨트롤러와 TouchOSC 같은 OSC 앱 매핑. 재생, 루프, 크로스페이더, 음량 페이더.',
     f5_h: '웨이브폼', f5_p: '주파수 대역별 컬러. 실시간 시크, 스크래치, 큐 마커.',
     f6_p: '덱별 + Master Syphon 서버. 원하는 VJ 소프트웨어로 자유롭게 라우팅.',
     f7_h: '플레이리스트', f7_p: '그룹별 영상 정리, 원하는 덱에 바로 로드. M3U 가져오기/내보내기.',
@@ -405,13 +405,13 @@ const T = {
     sy_h3: '버튼 하나, 나머지는 알아서',
     sy_p: '싱크 버튼을 누르면 마이크가 들리는 음악을 잡습니다. 비디오 재생 위치가 자동으로 맞춰지고, DJ가 구간을 점프해도 따라갑니다.',
     mi_h3: '손으로 만져야 제맛',
-    mi_p: '매핑 모드 켜고, 화면의 버튼을 누르고, 컨트롤러의 노브를 돌리거나 버튼을 누르면 끝. 덱별 매핑은 물론 Master 크로스페이더, 음량 페이더까지.',
+    mi_p: '매핑 모드 켜고, 화면의 버튼을 누르고, 컨트롤러의 노브를 돌리거나 버튼을 누르면 끝. TouchOSC 같은 OSC 앱도 같은 방식으로 매핑. 덱별 매핑은 물론 Master 크로스페이더, 음량 페이더까지.',
     stack_h3: 'macOS 네이티브',
     stack_p: 'Swift + Metal로 프레임 하나하나 직접 그립니다.',
     search_tip: '영상 파일을 빠르게 찾고 싶다면 <a href="search.html" style="color:var(--accent)">Search Everything for Mac</a>과 함께 사용해 보세요.',
   },
   ja: {
-    release_info: "v1.6.0 · Apple Silicon · macOS 15.4以降",
+    release_info: "v1.7.0 · Apple Silicon · macOS 15.4以降",
     f10_h: "再生範囲",
     f10_p: "[ ] で開始・終了位置を指定。ループ、ホットキュー、Auto Syncも範囲内で動作します。",
     download_latest: '最新版をダウンロード',
@@ -427,7 +427,7 @@ const T = {
     f1_h: 'マルチデッキ', f1_p: '最大4つの独立ビデオデッキ。それぞれ別ウィンドウ、Syphonサーバー、再生コントロール。',
     f2_h: 'オーディオ同期', f2_p: 'マイクでライブ音楽を捉え、ShazamKitを使って映像の位置と再生速度を自動同期。',
     f3_h: 'Master Output', f3_p: 'A/Bクロスフェーダーミキシング。Crossfade、Addition、Wipe。フルスクリーン出力。',
-    f4_p: 'ハードウェアコントローラーマッピング。再生、ループ、クロスフェーダー、ボリュームフェーダー。',
+    f4_p: 'ハードウェアコントローラーとTouchOSCなどのOSCアプリのマッピング。再生、ループ、クロスフェーダー、ボリュームフェーダー。',
     f5_h: 'ウェーブフォーム', f5_p: '周波数帯域別カラー表示。リアルタイムシーク、スクラッチ、キューマーカー。',
     f6_p: 'デッキ別 + Master Syphonサーバー。お好みのVJソフトウェアへ自由にルーティング。',
     f7_h: 'プレイリスト', f7_p: 'グループ別に映像を整理、好きなデッキにすぐロード。M3Uインポート/エクスポート。',
@@ -440,13 +440,13 @@ const T = {
     sy_h3: 'ボタン1つ、あとは自動',
     sy_p: 'シンクボタンを押すとマイクが聞こえる音楽をキャプチャします。ビデオの再生位置が自動的に合わせられ、DJがセクションをジャンプしても追従します。',
     mi_h3: '手で触ってこそ',
-    mi_p: 'マッピングモードをオンにして、画面のボタンを押して、コントローラーのノブを回すかボタンを押せば完了。デッキ別マッピングはもちろん、Masterクロスフェーダー、ボリュームフェーダーまで。',
+    mi_p: 'マッピングモードをオンにして、画面のボタンを押して、コントローラーのノブを回すかボタンを押せば完了。TouchOSCなどのOSCアプリも同じ方法でマッピング。デッキ別マッピングはもちろん、Masterクロスフェーダー、ボリュームフェーダーまで。',
     stack_h3: 'macOSネイティブ',
     stack_p: 'Swift + Metalでフレーム1枚1枚を直接描画します。',
     search_tip: '映像ファイルを素早く見つけたいなら <a href="search.html" style="color:var(--accent)">Search Everything for Mac</a> と一緒に使ってみてください。',
   },
   en: {
-    release_info: "v1.6.0 · Apple Silicon · macOS 15.4 or later",
+    release_info: "v1.7.0 · Apple Silicon · macOS 15.4 or later",
     f10_h: "Playback Range",
     f10_p: "Set start and end points with [ ] brackets. Loops, hot cues, and Auto Sync stay within the range.",
     download_latest: 'Download Latest Version',
@@ -462,7 +462,7 @@ const T = {
     f1_h: 'Multi-deck', f1_p: 'Up to 4 independent video decks. Each with its own window, Syphon server, and playback controls.',
     f2_h: 'Audio Sync', f2_p: 'Captures live music via microphone and uses ShazamKit to sync video position and playback rate automatically.',
     f3_h: 'Master Output', f3_p: 'A/B crossfader mixing. Crossfade, Addition, Wipe. Fullscreen output.',
-    f4_p: 'Hardware controller mapping. Play, loop, crossfader, volume fader.',
+    f4_p: 'Map hardware controllers and OSC apps such as TouchOSC. Play, loop, crossfader, volume fader.',
     f5_h: 'Waveform', f5_p: 'Color-coded by frequency band. Real-time seek, scratch, cue markers.',
     f6_p: 'Per-deck + Master Syphon servers. Route freely to any VJ software.',
     f7_h: 'Playlist', f7_p: 'Organize videos by group, load to any deck instantly. M3U import/export.',
@@ -475,7 +475,7 @@ const T = {
     sy_h3: 'One button, the rest is automatic',
     sy_p: 'Press the sync button and the mic picks up whatever music it hears. Video playback position is matched automatically, and it follows along even when the DJ jumps to a different section.',
     mi_h3: 'Hands-on control',
-    mi_p: 'Turn on mapping mode, tap a button on screen, twist a knob or press a button on your controller. Done. Per-deck mapping plus Master crossfader and volume fader.',
+    mi_p: 'Turn on mapping mode, tap a button on screen, twist a knob or press a button on your controller. Done. OSC apps such as TouchOSC map the same way. Per-deck mapping plus Master crossfader and volume fader.',
     stack_h3: 'macOS native',
     stack_p: 'Every frame rendered directly with Swift + Metal.',
     search_tip: 'Need to find video files fast? Try it with <a href="search.html" style="color:var(--accent)">Search Everything for Mac</a>.',
