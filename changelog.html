@@ -62,8 +62,6 @@
     <h3 data-i18n="h_new" style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:8px;"></h3>
     <ul>
       <li data-i18n="v170_a1"></li>
-      <li data-i18n="v170_a2"></li>
-      <li data-i18n="v170_a3"></li>
     </ul>
   </div>
 
@@ -577,8 +575,6 @@
 const T = {
   ko: {
     v170_a1: "<strong>OSC 매핑</strong>: TouchOSC 같은 OSC 컨트롤러로 덱·플레이리스트·Master Output의 버튼과 페이더를 MIDI와 같은 방식으로 매핑합니다. Settings → Mapping → OSC Input에서 Receive OSC를 켜면 UDP 포트 8000(변경 가능)으로 메시지를 받습니다.",
-    v170_a2: "버튼은 0보다 큰 값에서 누르고 0에서 뗍니다. 페이더는 0.0–1.0 값을 받습니다. Jog Wheel·Jog Ring은 계속 MIDI로만 매핑할 수 있습니다.",
-    v170_a3: "<strong>Allow From</strong>: OSC 메시지를 받을 기기의 IP 주소를 지정할 수 있습니다. 비워 두면 같은 네트워크의 모든 기기에서 메시지를 받습니다.",
     v160_a1: "<strong>자동 업데이트</strong>: 앱 실행 시 새 버전을 확인하고 다운로드한 뒤 종료할 때 설치합니다. Settings → General → Restart to Update로 바로 설치할 수도 있습니다.",
     v160_a2: "<strong>재생 범위</strong>: 오버뷰 바의 [ ] 브래킷을 드래그해 재생 시작·종료 지점을 지정합니다. 파일별로 저장되며 루프·탐색·핫큐·CUE·스크래치에도 적용됩니다.",
     v160_i1: "Auto Sync가 재생 범위 안에서만 동기화합니다. 외부 음악이 범위 밖에 있으면 노란색 상태를 표시하고, 범위 안으로 돌아오면 다시 동기화합니다.",
@@ -712,8 +708,6 @@ const T = {
   },
   ja: {
     v170_a1: "<strong>OSCマッピング</strong>：TouchOSCなどのOSCコントローラーで、デッキ・プレイリスト・Master Outputのボタンとフェーダーを、MIDIと同じ方法でマッピングできます。Settings → Mapping → OSC InputでReceive OSCをオンにすると、UDPポート8000（変更可能）でメッセージを受信します。",
-    v170_a2: "ボタンは0より大きい値で押下、0で解放として扱います。フェーダーは0.0〜1.0の値を受け取ります。Jog Wheel・Jog Ringは引き続きMIDIでのみマッピングできます。",
-    v170_a3: "<strong>Allow From</strong>：OSCメッセージを受信するデバイスのIPアドレスを指定できます。空欄の場合は、同じネットワーク上のすべてのデバイスから受信します。",
     v160_a1: "<strong>自動アップデート</strong>：起動時に新しいバージョンを確認・ダウンロードし、終了時にインストールします。Settings → General → Restart to Updateからすぐにインストールすることもできます。",
     v160_a2: "<strong>再生範囲</strong>：オーバービューバーの [ ] をドラッグして再生の開始・終了位置を指定できます。ファイルごとに保存され、ループ・シーク・ホットキュー・CUE・スクラッチにも適用されます。",
     v160_i1: "Auto Syncが再生範囲内でのみ同期するようになりました。外部の音楽が範囲外にある間は黄色で表示し、範囲内に戻ると再び同期します。",
@@ -847,8 +841,6 @@ const T = {
   },
   en: {
     v170_a1: "<strong>OSC mapping</strong>: Map deck, playlist, and Master Output buttons and faders from OSC controllers such as TouchOSC, the same way as MIDI. Turn on Receive OSC in Settings → Mapping → OSC Input to receive messages on UDP port 8000 (configurable).",
-    v170_a2: "Buttons press on a value above 0 and release at 0. Faders take values from 0.0 to 1.0. Jog Wheel and Jog Ring still require MIDI.",
-    v170_a3: "<strong>Allow From</strong>: Choose which IP addresses may send OSC messages. Leave it empty to accept messages from any device on the network.",
     v160_a1: "<strong>Automatic updates</strong>: Checks for new versions on launch, downloads them, and installs them when you quit. You can also install immediately from Settings → General → Restart to Update.",
     v160_a2: "<strong>Playback range</strong>: Drag the [ ] brackets on the overview bar to set start and end points. Ranges are saved per file and apply to looping, seeking, hot cues, CUE, and scratching.",
     v160_i1: "Auto Sync now synchronizes only within the playback range. It shows a yellow status while the external music is outside the range and resumes syncing when the music returns to it.",
